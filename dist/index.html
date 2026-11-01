@@ -9,18 +9,19 @@
   <meta property="og:title" content="DEWA — ближе к себе">
   <meta property="og:description" content="Студия растяжки и фитнеса у м. Московская. Движение в своём ритме.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://dewa-studio-atelier.brucenet2112.chatgpt.site/assets/studio-wide.webp">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <meta property="og:image" content="https://savokingi.github.io/dewa-stretching/assets/studio-wide.webp">
+  <link rel="icon" type="image/jpeg" href="assets/dewa-logo.jpg">
   <link rel="stylesheet" href="assets/fonts.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="editorial.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержимому</a>
   <header class="header" id="header">
     <div class="header-inner">
-      <a class="wordmark" href="#" aria-label="DEWA — главная">dewa<span class="wordmark-dot">®</span></a>
-      <span class="header-location">СТУДИЯ ДВИЖЕНИЯ<br>САНКТ-ПЕТЕРБУРГ</span>
+      <a class="brand" href="#" aria-label="DEWA — главная"><img src="assets/dewa-logo.jpg" width="64" height="64" alt="Логотип DEWA"><span>DEWA<small>STRETCHING STUDIO</small></span></a>
+      
       <nav class="desktop-nav" aria-label="Основная навигация">
         <a href="#directions">Направления</a><a href="#space">Студия</a><a href="#schedule">Расписание</a><a href="#prices">Цены</a><a href="#contact">Контакты</a>
       </nav>
@@ -37,14 +38,14 @@
     <section class="hero wrap" aria-labelledby="hero-heading">
       <div class="hero-text">
         <div class="eyebrow hero-eyebrow"><span class="status-dot"></span> РАСТЯЖКА · ФИТНЕС · АЭРОЙОГА</div>
-        <h1 id="hero-heading">Ближе<br><em>к себе.</em></h1>
+        <h1 id="hero-heading"><span>Ближе</span><br><em>к себе.</em><span class="hero-title-period" aria-hidden="true"></span></h1>
         <div class="hero-bottom">
-          <p>Чуть больше движения.<br>Чуть меньше суеты.<br>И целый час внимания к себе.</p>
-          <button class="round-link" data-book><span>Найти<br>своё занятие</span><span class="round-icon" aria-hidden="true">↗</span></button>
+          <p>Студия растяжки и фитнеса<br>на Московской.<br><br>Для тех, кто хочет двигаться<br>и чувствовать себя лучше.</p>
+          <button class="round-link" data-book><span>Начать<br>знакомство</span><span class="round-icon" aria-hidden="true">↗</span></button>
         </div>
       </div>
       <figure class="hero-figure">
-        <div class="hero-image-frame"><img src="assets/gallery-15.webp" width="800" height="1067" alt="Занятие в оливковом гамаке в светлом зале студии DEWA" fetchpriority="high" decoding="async"></div>
+        <div class="hero-image-frame"><img src="assets/gallery-15.webp" width="800" height="1067" alt="Занятие в оливковом гамаке в светлом зале студии DEWA" fetchpriority="high" decoding="async"><img class="hero-image-detail" src="assets/gallery-26.webp" width="800" height="1067" alt="Свет, зеркала и оливковые полотна в зале DEWA" decoding="async"></div>
         <figcaption><span>ДВИЖЕНИЕ В СВОЁМ РИТМЕ</span><span>DEWA STRETCHING / SPB</span></figcaption>
         <button class="trial-ticket" data-book><span class="ticket-label">ВАШЕ ПЕРВОЕ<br>ЗАНЯТИЕ</span><span class="ticket-price">600<span>₽</span></span><span class="ticket-arrow" aria-hidden="true">↗</span></button>
       </figure>
@@ -55,7 +56,7 @@
 
     <section class="directions section wrap" id="directions" aria-labelledby="directions-heading">
       <div class="section-top"><span class="eyebrow">01 / НАПРАВЛЕНИЯ</span><span class="section-aside">У КАЖДОГО ТЕЛА — СВОЙ ХАРАКТЕР</span></div>
-      <div class="section-title-row"><h2 id="directions-heading">Движение,<br>которое <em>ваше.</em></h2><p class="section-intro">Потянуться после рабочего дня.<br>Почувствовать силу. Попробовать новое.<br>Начните с того, что откликается.</p></div>
+      <div class="section-title-row"><h2 id="directions-heading">Ваше тело.<br><em>Ваше движение.</em></h2><p class="section-intro">Шесть направлений — от спокойной работы<br>на коврике до танцев и движения в воздухе.<br>Выберите своё.</p></div>
       <div class="direction-filters" role="group" aria-label="Подобрать направления"><button class="filter active" data-filter="all" aria-pressed="true">Все направления</button><button class="filter" data-filter="gentle" aria-pressed="false">Мягкий старт</button><button class="filter" data-filter="energy" aria-pressed="false">Больше энергии</button></div>
       <div class="direction-layout">
         <div class="direction-list" id="direction-list"></div>
@@ -70,7 +71,7 @@
     <section class="space-section" id="space" aria-labelledby="space-heading">
       <div class="wrap space-inner">
         <div class="section-top"><span class="eyebrow">02 / ПРОСТРАНСТВО</span><span class="section-aside">ТЕРРИТОРИЯ БЕЗУСЛОВНОЙ ЛЮБВИ К СЕБЕ</span></div>
-        <div class="space-heading-row"><h2 id="space-heading">Здесь можно<br><em>выдохнуть.</em></h2><div class="space-story"><p>За дверью остаётся город.<br>Здесь — свет, спокойные цвета<br>и люди, которым вы важны.</p><p>Камерная студия у метро Московская.<br>Место для движения. И для себя.</p></div></div>
+        <div class="space-heading-row"><h2 id="space-heading">Свет. Воздух.<br><em>Пространство.</em></h2><div class="space-story"><p>За дверью остаётся город.<br>Здесь — свет, спокойные цвета<br>и люди, которым вы важны.</p><p>Камерная студия у метро Московская.<br>Место для движения. И для себя.</p></div></div>
         <button class="space-panorama gallery-trigger" data-gallery="0" aria-label="Рассмотреть зал студии"><img src="assets/studio-wide.webp" width="1600" height="807" alt="Светлый зал DEWA с зеркалами и оливковыми гамаками" loading="lazy"><span class="image-action">Рассмотреть пространство <span aria-hidden="true">↗</span></span></button>
         <div class="space-caption"><span>СВЕТЛЫЙ ЗАЛ. ОЛИВКОВЫЕ ПОЛОТНА. ВАШЕ МЕСТО.</span><span>01 / 04</span></div>
         <div class="space-facts"><div><span class="fact-index">I</span><h3>Небольшие группы</h3><p>Чтобы тренер мог замечать<br>и поддерживать каждого.</p></div><div><span class="fact-index">II</span><h3>Забота в деталях</h3><p>Вода, полотенца и мелочи,<br>которые делают визит приятнее.</p></div><div><span class="fact-index">III</span><h3>Без спешки</h3><p>Понятные объяснения<br>и внимание к вашему темпу.</p></div></div>
@@ -79,9 +80,9 @@
 
     <section class="schedule section wrap" id="schedule" aria-labelledby="schedule-heading">
       <div class="section-top"><span class="eyebrow">03 / РАСПИСАНИЕ</span><a class="section-aside link-hover" href="https://dewastretching.ru/schedule" target="_blank" rel="noopener">ПОЛНОЕ РАСПИСАНИЕ ↗</a></div>
-      <div class="section-title-row"><h2 id="schedule-heading">Впишите себя<br><em>в свои планы.</em></h2><p class="section-intro">Оставьте в календаре время,<br>после которого станет немного лучше.</p></div>
-      <div class="schedule-toolbar"><div class="date-tabs" role="group" aria-label="День занятий"><button class="date-tab active" data-day="0" aria-pressed="true"><span>ПОНЕДЕЛЬНИК</span><b>02</b><span>НОЯБРЯ</span></button><button class="date-tab" data-day="1" aria-pressed="false"><span>ВТОРНИК</span><b>03</b><span>НОЯБРЯ</span></button><button class="date-tab" data-day="2" aria-pressed="false"><span>СРЕДА</span><b>04</b><span>НОЯБРЯ</span></button></div><span class="schedule-timezone">2–4 НОЯБРЯ 2026<br>МОСКОВСКОЕ ВРЕМЯ</span></div>
-      <div class="schedule-table" id="schedule-table" aria-live="polite"></div>
+      <div class="section-title-row"><h2 id="schedule-heading">Увидимся<br><em>на занятии.</em></h2><p class="section-intro">Оставьте в календаре время,<br>после которого станет немного лучше.</p></div>
+      <div class="schedule-layout"><div class="schedule-toolbar"><div class="date-tabs" role="group" aria-label="День занятий"><button class="date-tab active" data-day="0" aria-pressed="true"><span>ПОНЕДЕЛЬНИК</span><b>02</b><span>НОЯБРЯ</span></button><button class="date-tab" data-day="1" aria-pressed="false"><span>ВТОРНИК</span><b>03</b><span>НОЯБРЯ</span></button><button class="date-tab" data-day="2" aria-pressed="false"><span>СРЕДА</span><b>04</b><span>НОЯБРЯ</span></button></div><span class="schedule-timezone">2–4 НОЯБРЯ 2026<br>МОСКОВСКОЕ ВРЕМЯ</span></div>
+      <div class="schedule-table" id="schedule-table" aria-live="polite"></div></div>
       <div class="schedule-bottom"><p>Время и наличие мест подтверждаются при записи.<br>Все изменения — в расписании студии.</p><a class="text-link" href="https://dewastretching.ru/schedule" target="_blank" rel="noopener">Выбрать другую дату <span aria-hidden="true">↗</span></a></div>
     </section>
 
@@ -92,7 +93,7 @@
 
     <section class="team section wrap" id="team" aria-labelledby="team-heading">
       <div class="section-top"><span class="eyebrow">04 / КОМАНДА</span><a class="section-aside link-hover" href="https://dewastretching.ru/trainers" target="_blank" rel="noopener">ВСЯ КОМАНДА ↗</a></div>
-      <div class="team-grid"><div class="team-intro"><h2 id="team-heading">Внимание —<br>тоже <em>сила.</em></h2><p>За каждым занятием — человек,<br>который умеет объяснить, поддержать<br>и помочь сделать следующий шаг.</p><div class="team-note"><span class="note-line"></span><span>ПРОФЕССИОНАЛЬНЫЙ ОПЫТ.<br>ЧЕЛОВЕЧЕСКИЙ ПОДХОД.</span></div></div>
+      <div class="team-grid"><div class="team-intro"><h2 id="team-heading">Люди<br><em>DEWA.</em></h2><p>Знакомьтесь с теми, кто будет рядом.<br>Опыт в спорте, внимание к технике<br>и к человеку перед собой.</p><div class="team-note"><span class="note-line"></span><span>ПРОФЕССИОНАЛЬНЫЙ ОПЫТ.<br>ЧЕЛОВЕЧЕСКИЙ ПОДХОД.</span></div></div>
         <button class="trainer-card" data-trainer="0"><div class="trainer-photo"><img src="assets/trainer-julia.webp" width="800" height="1067" alt="Тренер Юлия Ромашко" loading="lazy"><span class="trainer-open" aria-hidden="true">↗</span></div><span class="trainer-name">Юлия Ромашко</span><span class="trainer-caption">АЭРОЙОГА · ПИЛАТЕС · РАСТЯЖКА</span><span class="trainer-experience">Мастер спорта по акробатике</span></button>
         <button class="trainer-card trainer-offset" data-trainer="1"><div class="trainer-photo"><img src="assets/trainer-svetlana.webp" width="800" height="1067" alt="Тренер Светлана Соколова" loading="lazy"><span class="trainer-open" aria-hidden="true">↗</span></div><span class="trainer-name">Светлана Соколова</span><span class="trainer-caption">ФИТНЕС · РАСТЯЖКА · АЭРОЙОГА</span><span class="trainer-experience">Мастер спорта по художественной гимнастике</span></button>
       </div>
@@ -102,11 +103,13 @@
 
     <section class="prices section wrap" id="prices" aria-labelledby="prices-heading">
       <div class="section-top"><span class="eyebrow">05 / ВАШ РИТМ</span><a class="section-aside link-hover" href="https://dewastretching.ru/prices" target="_blank" rel="noopener">ВСЕ АБОНЕМЕНТЫ И УСЛОВИЯ ↗</a></div>
-      <div class="section-title-row"><h2 id="prices-heading">Маленький шаг.<br><em>Хорошее начало.</em></h2><p class="section-intro">Разовая встреча или своя привычка.<br>Выберите, как удобно именно вам.</p></div>
-      <div class="price-grid"><article class="price-trial"><span class="eyebrow">ДЛЯ ЗНАКОМСТВА</span><h3>Первое<br><em>занятие</em></h3><p>Любое групповое направление.<br>55 минут внимания к себе.</p><div class="price-trial-bottom"><span class="big-price">600 <small>₽</small></span><button class="circle-button light" data-book aria-label="Записаться на первое занятие за 600 рублей">↗</button></div><span class="price-footnote">Одно пробное групповое посещение</span></article>
-      <div class="price-options"><article class="price-row"><div><span class="eyebrow">СВОЯ ПРИВЫЧКА</span><h3>Групповые занятия</h3><p>Абонемент на 4 занятия на 1 месяц.<br>Начните с удобного для вас ритма.</p></div><div class="price-row-action"><span>4 500 <small>₽</small></span><button class="circle-button" data-book data-interest="Групповой абонемент" aria-label="Узнать об абонементе на четыре занятия">↗</button></div></article>
-      <article class="price-row"><div><span class="eyebrow">ТОЛЬКО ВАШЕ ВРЕМЯ</span><h3>Персональная тренировка</h3><p>Программа под вашу цель<br>и внимание тренера один на один.</p></div><div class="price-row-action"><span>1 600 <small>₽</small></span><button class="circle-button" data-book data-interest="Пробное персональное" aria-label="Узнать о пробной персональной тренировке">↗</button></div></article>
-      <a class="gift-row" href="https://t.me/dewastretchspb?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D0%BE%D0%BC%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B5%20DEWA." target="_blank" rel="noopener"><span class="gift-mark" aria-hidden="true">d.</span><span>Подарить время для себя<small>ПОДАРОЧНЫЕ СЕРТИФИКАТЫ DEWA</small></span><span aria-hidden="true">↗</span></a></div></div>
+      <div class="section-title-row"><h2 id="prices-heading">Занятия<br><em>и абонементы.</em></h2><p class="section-intro">Разовая встреча или своя привычка.<br>Выберите, как удобно именно вам.</p></div>
+      <div class="price-ledger">
+        <article class="plan plan-first"><span class="plan-number">01</span><div class="plan-name"><span class="eyebrow">ПЕРВОЕ ЗНАКОМСТВО</span><h3>Пробное занятие</h3></div><p class="plan-info">Любое групповое направление<br><span>55 минут · одно посещение</span></p><span class="plan-price">600<small>₽</small></span><button class="circle-button" data-book aria-label="Записаться на пробное занятие за 600 рублей">↗</button></article>
+        <article class="plan"><span class="plan-number">02</span><div class="plan-name"><span class="eyebrow">РЕГУЛЯРНЫЙ РИТМ</span><h3>Групповой абонемент</h3></div><p class="plan-info">4 занятия на 1 месяц<br><span>Групповые тренировки студии</span></p><span class="plan-price">4 500<small>₽</small></span><button class="circle-button" data-book data-interest="Групповой абонемент" aria-label="Узнать об абонементе на четыре занятия">↗</button></article>
+        <article class="plan"><span class="plan-number">03</span><div class="plan-name"><span class="eyebrow">ИНДИВИДУАЛЬНЫЙ ПОДХОД</span><h3>Персональная тренировка</h3></div><p class="plan-info">Пробное занятие с тренером<br><span>Программа под вашу цель</span></p><span class="plan-price">1 600<small>₽</small></span><button class="circle-button" data-book data-interest="Пробное персональное" aria-label="Узнать о пробной персональной тренировке">↗</button></article>
+      </div>
+      <a class="gift-editorial" href="https://t.me/dewastretchspb?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D0%BE%D0%BC%20%D1%81%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D0%B5%20DEWA." target="_blank" rel="noopener"><span class="gift-card-preview"><img src="assets/dewa-logo.jpg" alt="" width="56" height="56"><span>Время<br><em>для себя.</em></span><small>ПОДАРОЧНЫЙ СЕРТИФИКАТ</small></span><span class="gift-editorial-copy"><span class="eyebrow">ХОРОШИЙ ПОВОД ПОЗАБОТИТЬСЯ</span><span>Подарите близким<br><em>новое ощущение себя.</em></span><small>Сертификат DEWA — на движение, отдых от суеты и время для себя.</small></span><span class="gift-editorial-arrow" aria-hidden="true">↗</span></a>
       <p class="small-note">Указана стоимость пробной персональной тренировки. Актуальные предложения и условия покупки — на сайте студии и у администратора.</p>
     </section>
 
@@ -124,7 +127,7 @@
     <section class="contact" id="contact" aria-labelledby="contact-heading"><div class="wrap contact-inner"><div class="section-top"><span class="eyebrow">07 / НАЙТИ СВОЁ МЕСТО</span><span class="section-aside">САНКТ-ПЕТЕРБУРГ</span></div><div class="contact-grid"><div class="contact-copy"><h2 id="contact-heading">Город большой.<br>Мы — <em>рядом.</em></h2><div class="contact-address"><span class="metro-icon" aria-hidden="true">М</span><div><h3>Московская</h3><p>Ленинский проспект, 153<br>БЦ Setl Center · 1 этаж · помещение 178</p></div></div><p class="contact-hours">ЕЖЕДНЕВНО · 10:00–22:00</p><div class="contact-actions"><a class="solid-button" href="https://t.me/dewastretchspb" target="_blank" rel="noopener">Написать в Telegram <span aria-hidden="true">↗</span></a><button class="text-link" id="route-open">Как пройти <span aria-hidden="true">↗</span></button></div></div><a class="contact-image" href="https://yandex.ru/maps/org/70112777694/" target="_blank" rel="noopener" aria-label="Открыть DEWA на Яндекс Картах"><img src="assets/gallery-0.webp" width="800" height="1067" alt="Оливковые гамаки и зеркала в студии DEWA" loading="lazy"><span class="map-label"><span>ВАШ МАРШРУТ<br>К ХОРОШЕМУ ДНЮ</span><span class="circle-button light" aria-hidden="true">↗</span></span></a></div></div></section>
   </main>
 
-  <footer class="footer"><div class="wrap"><div class="footer-top"><span>ДВИЖЕНИЕ В СВОЁМ РИТМЕ.</span><div><a href="https://t.me/nugaspb" target="_blank" rel="noopener">Telegram-канал ↗</a><a href="https://vk.com/dewastretchspb" target="_blank" rel="noopener">ВКонтакте ↗</a><a href="https://dewastretching.ru/app" target="_blank" rel="noopener">Личный кабинет ↗</a></div><a href="#" class="back-top">Наверх ↑</a></div><div class="footer-wordmark" aria-hidden="true">dewa</div><div class="footer-bottom"><span>© DEWA STRETCHING, 2026</span><span>С ЛЮБОВЬЮ К ДВИЖЕНИЮ. И К ВАМ.</span><a href="https://dewastretching.ru/" target="_blank" rel="noopener">Официальный сайт студии ↗</a></div></div></footer>
+  <footer class="footer"><div class="wrap"><div class="footer-top"><img class="footer-logo" src="assets/dewa-logo.jpg" width="78" height="78" alt="Логотип DEWA"><span>ДВИЖЕНИЕ В СВОЁМ РИТМЕ.</span><div><a href="https://t.me/nugaspb" target="_blank" rel="noopener">Telegram-канал ↗</a><a href="https://vk.com/dewastretchspb" target="_blank" rel="noopener">ВКонтакте ↗</a><a href="https://dewastretching.ru/app" target="_blank" rel="noopener">Личный кабинет ↗</a></div><a href="#" class="back-top">Наверх ↑</a></div><div class="footer-wordmark" aria-hidden="true">dewa</div><div class="footer-bottom"><span>© DEWA STRETCHING, 2026</span><span>С ЛЮБОВЬЮ К ДВИЖЕНИЮ. И К ВАМ.</span><a href="https://dewastretching.ru/" target="_blank" rel="noopener">Официальный сайт студии ↗</a></div></div></footer>
 
   <dialog class="dialog booking-dialog" id="booking-dialog" aria-labelledby="booking-title"><button class="dialog-close" data-close aria-label="Закрыть окно">×</button><div class="booking-art"><img src="assets/gallery-34.webp" width="800" height="1067" alt="Занятие в гамаке в DEWA"><span>ВАШЕ ВРЕМЯ.<br>ВАШ РИТМ.</span></div><div class="booking-content"><span class="eyebrow">ПЕРВЫЙ ШАГ — САМЫЙ ВАЖНЫЙ</span><h2 id="booking-title">Давайте<br><em>познакомимся.</em></h2><p>Выберите, что интересно. Администратор поможет найти время и подтвердит запись.</p><form id="booking-form"><label for="guest-name">Как к вам обращаться <span>необязательно</span></label><input id="guest-name" name="name" autocomplete="given-name" maxlength="60" placeholder="Ваше имя"><label for="guest-interest">Что хочется попробовать</label><select id="guest-interest" name="interest"><option>Помогите выбрать направление</option><option>Аэройога</option><option>Пилатес</option><option>Растяжка</option><option>Здоровая спина</option><option>Боди Фитнес</option><option>Зумба</option><option>Групповой абонемент</option><option>Пробное персональное</option></select><div class="selected-session" id="selected-session" hidden></div><button class="solid-button" type="submit">Продолжить в Telegram <span aria-hidden="true">↗</span></button><p class="booking-note">Откроется переписка с администратором с подготовленным текстом. Отправьте сообщение, чтобы согласовать занятие.</p><a class="inline-link official-booking" href="https://dewastretching.ru/schedule" target="_blank" rel="noopener">Или записаться на сайте студии ↗</a><p class="booking-feedback" id="booking-feedback" role="status" hidden></p></form></div></dialog>
   <dialog class="dialog detail-dialog" id="detail-dialog" aria-labelledby="detail-title"><button class="dialog-close" data-close aria-label="Закрыть окно">×</button><div id="detail-content"></div></dialog>
