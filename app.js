@@ -2,7 +2,6 @@
 
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const directions = [
   {name:'Аэройога',category:'gentle',image:'gallery-24.webp',caption:'ВРЕМЯ ОТПУСТИТЬ СУЕТУ',meta:'Гибкость, баланс, новые ощущения',description:'Знакомство с движением на подвесных полотнах. Гамак помогает исследовать баланс и почувствовать тело по-новому.',detail:'На занятии вы знакомитесь с гамаком, осваиваете положения и упражнения под руководством тренера. Темп и варианты выполнения подбираются с учётом группы. Если вы впервые — скажите об этом перед началом.',facts:['55 минут','Групповой формат','Занятия в гамаках']},
@@ -26,7 +25,8 @@ function selectDirection(index) {
   image.src = `assets/${item.image}`;
   image.alt = `${item.name} в студии DEWA`;
   $('#direction-description').textContent = item.description;
-  $('#direction-photo-label').textContent = item.caption;
+  $('#direction-photo-label').textContent = item.name;
+  $('#direction-count').textContent = String(index+1).padStart(2,'0');
   $$('.direction-row').forEach(button => {
     const active = Number(button.dataset.index) === index;
     button.classList.toggle('active',active);
@@ -119,6 +119,17 @@ $$('[data-trainer]').forEach(button=>button.addEventListener('click',()=>{
   $('#detail-content').innerHTML=`<div class="detail-layout"><div class="detail-picture"><img src="assets/${trainer.image}" alt="${trainer.name}"></div><div class="detail-copy"><span class="eyebrow">КОМАНДА DEWA</span><h2 id="detail-title">${trainer.name}</h2><p>${trainer.about}</p><p>${trainer.detail}</p><a class="solid-button" href="https://dewastretching.ru/schedule" target="_blank" rel="noopener">Посмотреть расписание <span aria-hidden="true">↗</span></a></div></div>`;
   openDialog($('#detail-dialog'));
 }));
+$$('[data-trainer]').forEach(button=>{
+  const preview=()=>{
+    const trainer=trainers[Number(button.dataset.trainer)];
+    $('#people-image').src=`assets/${trainer.image}`;
+    $('#people-image').alt=`Тренер ${trainer.name}`;
+    $('#people-name').textContent=trainer.name;
+    $$('[data-trainer]').forEach(item=>item.classList.toggle('active',item===button));
+  };
+  button.addEventListener('pointerenter',event=>{if(event.pointerType==='mouse')preview();});
+  button.addEventListener('focus',preview);
+});
 
 const schedule=[
   {date:'2 ноября 2026',classes:[['18:15','Аэройога','Юлия Ромашко','ГИБКОСТЬ И БАЛАНС'],['19:15','Пилатес','Юлия Ромашко','КОНТРОЛЬ И ДЫХАНИЕ'],['20:15','Здоровая спина','Юлия Ромашко','ВНИМАНИЕ К ДВИЖЕНИЮ']]},
@@ -181,9 +192,4 @@ if('IntersectionObserver' in window){
   const links=$$('.desktop-nav a');
   const activeObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){links.forEach(link=>{if(link.hash===`#${entry.target.id}`)link.setAttribute('aria-current','location');else link.removeAttribute('aria-current');});}});},{rootMargin:'-20% 0px -65% 0px'});
   links.forEach(link=>{const section=$(link.hash);if(section)activeObserver.observe(section);});
-  if(!reducedMotion){
-    document.documentElement.classList.add('js-motion');
-    const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}});},{threshold:.08});
-    $$('.section-title-row,.space-heading-row,.space-facts,.team-grid,.journal-grid,.faq-intro,.contact-copy').forEach(element=>{element.classList.add('reveal');revealObserver.observe(element);});
-  }
 }
